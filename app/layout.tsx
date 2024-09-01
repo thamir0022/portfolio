@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "Thamir S | Next.js Developer Portfolio",
@@ -19,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
+      <head>
         {/* Google tag (gtag.js) */}
         <script
           async
@@ -36,7 +35,7 @@ export default function RootLayout({
             `,
           }}
         />
-      </Head>
+      </head>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
