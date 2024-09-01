@@ -29,7 +29,7 @@ export const socialMedia: SocialMediaItem[] = [
 
 const SocialMedia = () => {
   return (
-    <div className="flex items-center md:gap-3 gap-6">
+    <div className="mt-5 lg:mt-0 flex items-center md:gap-3 gap-6">
       {socialMedia.map(({ id, href, icon }) => (
         <div
           key={id}
