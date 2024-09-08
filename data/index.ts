@@ -1,11 +1,11 @@
 import { FaGithub, FaXTwitter, FaLinkedin } from "react-icons/fa6";
 
-
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
   { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
+  { name: "Resume", link: "/Thamir_Resume.pdf" },
 ];
 
 export const gridItems = [
@@ -70,32 +70,55 @@ export const gridItems = [
     img: "",
     spareImg: "",
   },
+  {
+    id: 7,
+    title: "Unlock My Code",
+    description: "",
+    className: "md:col-span-6 md:row-span-4",
+    imgClassName: "",
+    titleClassName: "justify-center md:max-w-full max-w-60 text-center",
+    img: "",
+    spareImg: "",
+  },
 ];
 
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://github.com/adrianhajdin?tab=repositories",
+    title: "Horizon - A Modern Banking Web App",
+    des: "Horizon your innovative and fun way to manage your finances! 🌟 Connect your bank accounts, track your spending, and transfer funds with ease, all wrapped in a sleek, modern interface.",
+    img: "/horizon.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/app.svg"],
+    link: "https://github.com/thamir0022/Horizon",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "https://github.com/adrianhajdin/zoom-clone",
+    title: "Ecommerce Web App",
+    des: "Explore a seamless online shopping experience with our Next.js Ecommerce Web App.",
+    img: "/ecommerce.png",
+    iconLists: [
+      "/next.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/mongodb.svg",
+      "/material.svg",
+      "/stripe.svg",
+    ],
+    link: "https://github.com/thamir0022/Nextjs-Ecommerce-Client",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://github.com/adrianhajdin/ai_saas_app",
+    title: "Blog Web App",
+    des: "This project is a blog web app built with MERN stack. I spiced up the design using Tailwind CSS and made the bundling efficient with Vite.js.",
+    img: "/blog.png",
+    iconLists: [
+      "/re.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/mongodb.svg",
+      "/nodejs.svg",
+    ],
+    link: "https://github.com/thamir0022/Mern-Blog-App",
   },
   {
     id: 4,
@@ -103,103 +126,89 @@ export const projects = [
     des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://github.com/adrianhajdin/iphone",
+    link: "https://github.com/thamir0022/Apple-Website-Clone",
   },
 ];
 
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Thamir was a fantastic addition to our team at Grapesgenix. His dedication, enthusiasm, and strong technical skills in both frontend and backend development were evident throughout his time with us. Thamir consistently contributed valuable ideas and adapted quickly to new technologies, making a significant impact on our projects. If you're looking for a talented and committed developer, Thamir is the right choice.",
+    name: "Gopikrishnan P.G",
+    title: "CEO Of Grapesgenix Technical Solutions Pvt Ltd",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Thamir was a fantastic addition to our team at Grapesgenix. His dedication, enthusiasm, and strong technical skills in both frontend and backend development were evident throughout his time with us. Thamir consistently contributed valuable ideas and adapted quickly to new technologies, making a significant impact on our projects. If you're looking for a talented and committed developer, Thamir is the right choice.",
+    name: "Gopikrishnan P.G",
+    title: "CEO Of Grapesgenix Technical Solutions Pvt Ltd",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Thamir was a fantastic addition to our team at Grapesgenix. His dedication, enthusiasm, and strong technical skills in both frontend and backend development were evident throughout his time with us. Thamir consistently contributed valuable ideas and adapted quickly to new technologies, making a significant impact on our projects. If you're looking for a talented and committed developer, Thamir is the right choice.",
+    name: "Gopikrishnan P.G",
+    title: "CEO Of Grapesgenix Technical Solutions Pvt Ltd",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Thamir was a fantastic addition to our team at Grapesgenix. His dedication, enthusiasm, and strong technical skills in both frontend and backend development were evident throughout his time with us. Thamir consistently contributed valuable ideas and adapted quickly to new technologies, making a significant impact on our projects. If you're looking for a talented and committed developer, Thamir is the right choice.",
+    name: "Gopikrishnan P.G",
+    title: "CEO Of Grapesgenix Technical Solutions Pvt Ltd",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Thamir was a fantastic addition to our team at Grapesgenix. His dedication, enthusiasm, and strong technical skills in both frontend and backend development were evident throughout his time with us. Thamir consistently contributed valuable ideas and adapted quickly to new technologies, making a significant impact on our projects. If you're looking for a talented and committed developer, Thamir is the right choice.",
+    name: "Gopikrishnan P.G",
+    title: "CEO Of Grapesgenix Technical Solutions Pvt Ltd",
   },
 ];
 
-export const companies = [
-  {
-    id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
-  },
-  {
-    id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
-  },
-  {
-    id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
-  },
-  {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
-  },
-  {
-    id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
-  },
-];
+// export const companies = [
+//   {
+//     id: 1,
+//     name: "cloudinary",
+//     img: "/cloud.svg",
+//     nameImg: "/cloudName.svg",
+//   },
+//   {
+//     id: 2,
+//     name: "appwrite",
+//     img: "/app.svg",
+//     nameImg: "/appName.svg",
+//   },
+//   {
+//     id: 3,
+//     name: "HOSTINGER",
+//     img: "/host.svg",
+//     nameImg: "/hostName.svg",
+//   },
+//   {
+//     id: 4,
+//     name: "stream",
+//     img: "/s.svg",
+//     nameImg: "/streamName.svg",
+//   },
+//   {
+//     id: 5,
+//     name: "docker.",
+//     img: "/dock.svg",
+//     nameImg: "/dockerName.svg",
+//   },
+// ];
 
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "MERN Stack Intern",
+    desc: "Completed a 4-month internship focusing on both frontend and backend development using the MERN stack. Contributed to multiple projects, demonstrating a strong willingness to learn and adapt to new technologies.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
-  },
-  {
-    id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
-  },
-  {
-    id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Next.js Developer",
+    desc: "Currently working as a Next.js Developer, building scalable and maintainable web applications with modern UI/UX design principles, and enhancing performance and security.",
     className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
+    thumbnail: "/exp2.svg",
   },
 ];

@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { FaGithub, FaXTwitter, FaLinkedin } from "react-icons/fa6";
+import { FaGithub, FaXTwitter, FaLinkedin, FaWhatsapp, FaInstagram } from "react-icons/fa6";
+import { IoIosMail } from "react-icons/io";
 
 // Define a type for your social media items
 type SocialMediaItem = {
@@ -24,6 +25,21 @@ export const socialMedia: SocialMediaItem[] = [
     id: 3,
     icon: <FaLinkedin />, // JSX element
     href: "https://www.linkedin.com/in/thamirsiddik/",
+  },
+  {
+    id: 4,
+    icon: <FaWhatsapp />, // JSX element
+    href: "https://api.whatsapp.com/send?phone=919778078742&text=Hi",
+  },
+  {
+    id: 5,
+    icon: <FaInstagram />, // JSX element
+    href: "https://www.instagram.com/thaxxmir",
+  },
+  {
+    id: 5,
+    icon: <IoIosMail />, // JSX element
+    href: "mailto:thamirsiddik@gmail.com",
   },
 ];
 
