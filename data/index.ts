@@ -70,16 +70,6 @@ export const gridItems = [
     img: "",
     spareImg: "",
   },
-  {
-    id: 7,
-    title: "Unlock My Code",
-    description: "",
-    className: "md:col-span-6 md:row-span-4",
-    imgClassName: "",
-    titleClassName: "justify-center md:max-w-full max-w-60 text-center",
-    img: "",
-    spareImg: "",
-  },
 ];
 
 export const projects = [

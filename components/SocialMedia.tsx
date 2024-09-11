@@ -37,7 +37,7 @@ export const socialMedia: SocialMediaItem[] = [
     href: "https://www.instagram.com/thaxxmir",
   },
   {
-    id: 5,
+    id: 6,
     icon: <IoIosMail />, // JSX element
     href: "mailto:thamirsiddik@gmail.com",
   },
