@@ -5,7 +5,7 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { FlipWords } from "./ui/flip-words";
 
 const Hero = () => {
-  const words = ['Developer', 'Designer', 'Problem Solver', 'Creative Thinker', 'Innovator', 'Engineer', 'Architect'];
+  const words = ['a Developer,', 'a Designer,', 'a Problem Solver,', 'a Creative Thinker,', 'an Innovator,', 'an Engineer,', 'an Architect,'];
 
   return (
     <div className="pb-20 pt-36">
@@ -39,7 +39,7 @@ const Hero = () => {
             words="Transforming Concenpts into Seamless User Experiences"
           />
           <div className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi, I&apos;m Thamir, a<FlipWords words={words}/>Nice to meet you.
+            Hi, I&apos;m Thamir,<FlipWords words={words}/>Nice to meet you.
           </div>
           <a href="#projects">
             <MagicButton title="Show my work" icon={<FaLocationArrow/>} position="right"/>
