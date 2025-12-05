@@ -34,7 +34,7 @@ export const socialMedia: SocialMediaItem[] = [
   {
     id: 5,
     icon: <FaInstagram />, // JSX element
-    href: "https://www.instagram.com/thaxxmir",
+    href: "https://www.instagram.com/thamirhere",
   },
   {
     id: 6,
