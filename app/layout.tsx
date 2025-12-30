@@ -1,15 +1,11 @@
-import type { Metadata } from "next";
+import Script from "next/script";
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 import { Inter } from "next/font/google";
-
-export const metadata: Metadata = {
-  title: "Thamir S | Next.js Developer Portfolio",
-  description:
-    "Explore the portfolio of Thamir S, a passionate Next.js developer specializing in modern, scalable web applications. Discover projects showcasing expertise in React, Next.js, and cutting-edge web technologies.",
-};
-
+import { jsonLdString, metadata as siteMetadata } from "@/app/metadata";
 const inter = Inter({ subsets: ["latin"] });
+
+export const metadata = siteMetadata;
 
 export default function RootLayout({
   children,
@@ -19,24 +15,26 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Google tag (gtag.js) */}
         <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-9ND17WDZD3"
-        ></script>
-        <script
-          id="google-analytics"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-9ND17WDZD3');
-            `,
-          }}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: jsonLdString }}
         />
       </head>
       <body className={inter.className}>
+        {/* Google Analytics: use next/script with afterInteractive */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-9ND17WDZD3"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`(function(){
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-9ND17WDZD3', { page_path: window.location.pathname });
+          })();`}
+        </Script>
+
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
