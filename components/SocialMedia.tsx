@@ -45,7 +45,7 @@ export const socialMedia: SocialMediaItem[] = [
     id: 5,
     label: "Instagram profile",
     icon: <FaInstagram aria-hidden="true" />,
-    href: "https://www.instagram.com/thaxxmir",
+    href: "https://www.instagram.com/thamirhere",
   },
   {
     id: 6,
