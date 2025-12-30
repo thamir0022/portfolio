@@ -1,7 +1,5 @@
 import { Metadata } from "next";
 
-export const metadataBase = new URL("https://thamir-siddik.vercel.app");
-
 export const metadata: Metadata = {
   title: {
     default: "Thamir S | Full-Stack Developer Portfolio",
@@ -9,6 +7,7 @@ export const metadata: Metadata = {
   },
   description:
     "Explore the portfolio of Thamir S - Full-Stack developer building modern, scalable, high-performance web apps. Projects, resume, and contact.",
+  metadataBase: new URL("https://thamir-siddik.vercel.app"),
   keywords: [
     "Javascript",
     "TypeScript",
